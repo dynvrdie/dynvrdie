@@ -1,0 +1,261 @@
+/* ===============================
+   BASIC PAGE
+================================ */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* ===============================
+   MAIN CARD
+================================ */
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* ===============================
+   HEADINGS
+================================ */
+
+h1 {
+    color: #8b5a2b;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #555;
+    margin-top: 0;
+}
+
+
+/* ===============================
+   INPUTS
+================================ */
+
+input[type="text"] {
+    font-size: 14px;
+    transition: border-color 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #8b5a2b !important;
+}
+
+
+/* ===============================
+   BUTTONS
+================================ */
+
+button {
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #6d4621;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+/* ===============================
+   RESULT BOX
+================================ */
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.success {
+    background-color: #e2f0d9;
+    color: #385723;
+    border: 1px solid #b6d7a8;
+}
+
+.error {
+    background-color: #fce4d6;
+    color: #c65911;
+    border: 1px solid #f4ccd1;
+}
+
+
+/* ===============================
+   FADE ANIMATION
+================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ===============================
+   REGISTRY TABLE
+================================ */
+
+.registry-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.registry-table th,
+.registry-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.registry-table th {
+    background-color: #f4f1ea;
+    color: #8b5a2b;
+}
+
+.registry-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+
+/* ===============================
+   DARK MODE
+================================ */
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card {
+    background-color: #2a2a2a;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode h1,
+body.dark-mode h3 {
+    color: #d4a373;
+}
+
+body.dark-mode p {
+    color: #ccc;
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #333;
+    color: #fff;
+    border-color: #555 !important;
+}
+
+body.dark-mode input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+body.dark-mode .registry-table {
+    color: #ddd;
+}
+
+body.dark-mode .registry-table th {
+    background-color: #333;
+    color: #d4a373;
+    border-color: #444;
+}
+
+body.dark-mode .registry-table td {
+    border-color: #444;
+}
+
+body.dark-mode .registry-table tr:nth-child(even) {
+    background-color: #222;
+}
+
+body.dark-mode hr {
+    border-top-color: #444 !important;
+}
+
+
+/* ===============================
+   BLACK & WHITE MODE
+================================ */
+
+body.grayscale-mode {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .registry-table {
+        font-size: 11px;
+    }
+
+    .registry-table th,
+    .registry-table td {
+        padding: 6px;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+}
