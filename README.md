@@ -47,7 +47,9 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+![Screenshot1]
+<img width="1536" height="817" alt="c1" src="https://github.com/user-attachments/assets/a969a5f9-a6c2-4fda-a748-8f087ca5cfff" />
+
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
