@@ -2,26 +2,25 @@
 
 
 
-# [Project Name] 🎯
+# [potato verification] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [dynvrdie]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [don p rix] - [sahrdaya college of advance studies]
+- Member 2: [yadhukrishna ms] - [sahrdaya college of advance studies]
 
 ### Project Description
-[2-3 lines about what your project does]
+[to find the real you]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[truth revealing]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[give them a proof]
 
 ## Technical Details
 ### Technologies/Components Used
